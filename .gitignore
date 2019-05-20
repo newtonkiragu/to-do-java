@@ -39,6 +39,7 @@ build/
 .idea/
 .vscode/
 gradle/
+gradlew
 gradlew.bat
 .project
 .settings/
