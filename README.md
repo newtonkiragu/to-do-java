@@ -8,7 +8,7 @@ Built with: Java 8 (Spark) and PostgreSQL.
 1. Clone the repository
 ``` shell
 $ git clone https://github.com/newtonkiragu/to-do-java.git
-$ cd to-do-list-spark
+$ cd to-do-java
 ```
 
 2. Create the application database in the Postgres shell
