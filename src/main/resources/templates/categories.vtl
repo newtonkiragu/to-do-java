@@ -1,0 +1,20 @@
+<style>
+h1{
+  margin-top:60px;
+}
+</style>
+<h1>All categories</h1>
+<div class="row">
+  <div class="card-columns">
+  #foreach ($category in $categories)
+    <div class="card shadow border-0 text-center">
+      <div class="card-body">
+        <a class="card-text" href="/category/$category.getId()">$category.getName()</a>
+      </div>
+    </div>
+  #end
+
+  </div>
+
+</div>
+<a href="/category/new">Add New Category</a>

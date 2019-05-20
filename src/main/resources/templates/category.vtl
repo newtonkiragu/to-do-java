@@ -1,0 +1,23 @@
+<style>
+h1{
+  margin-top:60px;
+}
+</style>
+<h1>Category: $category.getName()</h1>
+<h2>Tasks:</h2>
+<div class="row">
+  <div class="card-columns">
+  #foreach($task in $category.getTasks())
+    <div class="card shadow border-0 text-center">
+      <div class="card-body">
+        <a class="card-text" href="/task/$task.getId()">$task.getDescription()</a>
+      </div>
+    </div>
+  #end
+
+  </div>
+
+</div>
+
+<a href="/category/$category.getId()/task/new">Add a new task</a>
+<a href="/categories">All categories</a>
