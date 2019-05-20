@@ -2,6 +2,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 archivesBaseName = "to-do"
+applicationName = "to-do"
 mainClassName = 'App'
 
 version = '1.0'
@@ -19,4 +20,4 @@ dependencies {
 }
 
 defaultTasks = ['clean']
-task stage(dependsOn: ['clean', 'installDist'])
+task stage(dependsOn: ['clean', 'installApp'])
